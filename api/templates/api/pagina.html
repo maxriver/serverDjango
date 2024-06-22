@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina Prova API</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+        <h1>La Pagina</h1>
+    {% load static %}
+        <img src="{% static 'api/a.png' %}" width="50" height="50"></img>
+
+        <!-- L'object api1 è passato totalmente E' un Array -->
+    {% for api in api1 %} 
+        <h3>Questo è il campo: {{ api.dato }}</h3>
+        <img src="{{api.immagine.url}}"></img>
+    {% endfor %}
+    <script src="index.js"></script>
+  </body>
+</html>
