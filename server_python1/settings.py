@@ -80,9 +80,21 @@ WSGI_APPLICATION = 'server_python1.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / "db.sqlite3",
+    },
+    'mongodb': {
+        'ENGINE': 'djongo',
+        'NAME': 'myFirstDataBase',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host': 'localhost',  # esempio: 'localhost' o 'mongodb://username:password@host:port/database'
+            'port': 27017,
+            # 'username': 'your-username',  # rimuovi se non usi l'autenticazione
+            # 'password': 'your-password',  # rimuovi se non usi l'autenticazione
+        }
     }
 }
+
 
 
 # Password validation
