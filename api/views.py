@@ -12,4 +12,4 @@ def api(request):
 def api2(request):
     return HttpResponse("Pagina di Api2")
 
-# qui ho creato la differenza sul branch dev
+# questo è la seconda modifica
