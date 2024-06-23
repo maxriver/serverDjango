@@ -12,4 +12,7 @@ def api(request):
 def api2(request):
     return HttpResponse("Pagina di Api2")
 
+def api1(request):
+    return HttpResponse("Pagina di Api2")
+
 # questo è la seconda modifica
