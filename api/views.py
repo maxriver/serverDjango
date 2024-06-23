@@ -10,4 +10,6 @@ def api(request):
  # i dati del databae vengono passati alla pagina
 
 def api2(request):
-    return HttpResponse("Pagina di Api2") 
+    return HttpResponse("Pagina di Api2")
+
+# qui ho creato la differenza sul branch dev
